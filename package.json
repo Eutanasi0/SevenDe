@@ -4,7 +4,7 @@
   "description": "A web app that makes it easy to buy food at UNMSM",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon app.js"
+    "tilin": "nodemon app.js"
   },
   "keywords": [],
   "author": "",
