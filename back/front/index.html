@@ -19,14 +19,41 @@
         font-family: 'Poor Story', system-ui;
     }
 
+    body{
+        overflow-x: hidden;
+    }
+
+    .main{
+        width: 1400px;
+        max-width: 95%;
+        margin: 0 auto;
+    }
+    
+    .inicio{
+        height: 100%;
+        width: 100%;
+        min-height: 100vh;
+        background: radial-gradient(#fff,0.5%,#0a0a0a)  ;
+    }
+
 </style>
 <body>
     <section class="inicio">
-        <header>
-            <div class="logo">
-                <h2><a href="#">SevenDe</a></h2>
-            </div>
-        </header>
+        <div class="main">
+            <header>
+                <div class="logo">
+                    <h2><a href="#">SevenDe</a></h2>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Sobre Nosotros</a></li>
+                        <li><a href="#">Contacto</a></li>
+    
+                    </ul>
+                </nav>
+            </header>
+        </div> 
     </section>
 </body>
 </html>
