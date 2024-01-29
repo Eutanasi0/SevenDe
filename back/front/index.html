@@ -20,6 +20,7 @@
         margin: 0;
         box-sizing: border-box;
         font-family: 'Workbench', sans-serif;
+        background-color: black;
     }
 
     body{
@@ -27,8 +28,9 @@
     }
 
     .main{
-        width: 1400px;
-        max-width: 95%;
+        width: 100%;
+        height: 100%;
+        max-width: 100%;
         margin: 0 auto;
     }
     
@@ -36,16 +38,48 @@
         height: 100%;
         width: 100%;
         min-height: 100vh;
-        background: radial-gradient(	#808080,10%, #0a0a0a)  ;
         position: relative;
     }
 
     .inicio header .logo h2 a{
         display: block;
-        font-size: 32px;
+        font-size: 80px;
         font-weight: 600;
         text-decoration: none;
-        color: white
+        color: white;
+        background-color: #333;
+    }
+
+    header {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 1em 0;
+    }
+    nav {
+        background-color: #333;
+    }
+    
+    nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+        background-color: #333;
+    }
+
+    nav ul li {
+        margin: 0 40px;
+        background-color: #333;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        background-color: #333;
     }
 </style>
 <body>
