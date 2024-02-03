@@ -106,7 +106,47 @@
         font-weight: bold;
     }
 
- 
+        /* Agrega este estilo a tu hoja de estilos CSS */
+    .cuadrados-container {
+        display: flex; /* Alinea los cuadrados en horizontal */
+        justify-content: center;
+    }
+
+    .cuadrado {
+        text-align: center;
+        width: 180px; 
+        height: 160px; 
+        margin: 0 20px; 
+        background-color: transparent; 
+        border: 2px solid white; /* Borde blanco de 2 píxeles */
+        border-radius: 10px; /* Esquinas redondeadas de 10 píxeles */
+        overflow: hidden;
+        margin-top: 40px;
+    }
+
+    .cuadrado img {
+        width: 100%; /* Asegura que la imagen ocupe todo el cuadrado */
+        height: 100%; /* Asegura que la imagen ocupe todo el cuadrado */
+        object-fit: cover; /* Ajusta el tamaño y recorta la imagen según sea necesario */
+    }
+
+    .menus-container {
+        display: flex; /* Alinea los cuadrados en horizontal */
+        justify-content: center;
+    }
+
+    .menus {
+        text-align: center;
+        width: 180px; 
+        height: 300px; 
+        margin: 0 20px; 
+        background-color: transparent; 
+        border: 2px solid white; /* Borde blanco de 2 píxeles */
+        border-radius: 10px; /* Esquinas redondeadas de 10 píxeles */
+        overflow: hidden;
+        margin-top: 40px;
+    }
+    
     
 </style>
 <body>
@@ -124,6 +164,40 @@
             </header>
         </div>
 
+        <div class="cuadrados-container">
+            <!-- Cuadrado 1 -->
+            <div class="cuadrado">
+                <img src="imagen1.jpg" alt="Imagen 1">
+            </div>
+            <!-- Cuadrado 2 -->
+            <div class="cuadrado">
+                <img src="imagen2.jpg" alt="Imagen 2">
+            </div>
+            <!-- Cuadrado 3 -->
+            <div class="cuadrado">
+                <img src="imagen3.jpg" alt="Imagen 3">
+            </div>
+        </div>
+
+        <div class="menus-container">
+            <!-- Cuadrado 1 -->
+            <div class="menus">
+                
+            </div>
+            <!-- Cuadrado 2 -->
+            <div class="menus">
+                
+            </div>
+            <!-- Cuadrado 3 -->
+            <div class="menus">
+                
+            </div>
+        </div>
+        <div class="entrarmenu">
+            <a href="#" class="entrarsolicitar">Elegir</a>
+            <a href="#" class="entrarsolicitar">Elegir</a>
+            <a href="#" class="entrarsolicitar">Elegir</a>
+        </div>
     </section>
 
 </body>
