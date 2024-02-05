@@ -106,9 +106,9 @@
         font-weight: bold;
     }
 
-        /* Agrega este estilo a tu hoja de estilos CSS */
+
     .cuadrados-container {
-        display: flex; /* Alinea los cuadrados en horizontal */
+        display: flex; 
         justify-content: center;
     }
 
@@ -118,20 +118,20 @@
         height: 160px; 
         margin: 0 20px; 
         background-color: transparent; 
-        border: 2px solid white; /* Borde blanco de 2 píxeles */
-        border-radius: 10px; /* Esquinas redondeadas de 10 píxeles */
+        border: 2px solid white; 
+        border-radius: 10px; 
         overflow: hidden;
         margin-top: 40px;
     }
 
     .cuadrado img {
-        width: 100%; /* Asegura que la imagen ocupe todo el cuadrado */
-        height: 100%; /* Asegura que la imagen ocupe todo el cuadrado */
-        object-fit: cover; /* Ajusta el tamaño y recorta la imagen según sea necesario */
+        width: 100%; 
+        height: 100%; 
+        object-fit: cover; 
     }
 
     .menus-container {
-        display: flex; /* Alinea los cuadrados en horizontal */
+        display: flex; 
         justify-content: center;
     }
 
@@ -141,12 +141,39 @@
         height: 300px; 
         margin: 0 20px; 
         background-color: transparent; 
-        border: 2px solid white; /* Borde blanco de 2 píxeles */
-        border-radius: 10px; /* Esquinas redondeadas de 10 píxeles */
+        border: 2px solid white; 
+        border-radius: 10px; 
         overflow: hidden;
         margin-top: 40px;
     }
-    
+
+    .entrarsolicitar{
+        text-decoration: none;
+        display: inline-block;
+        text-align: center;
+        color: white;
+        background: #000000;
+        border: 1px solid transparent;
+        padding: 12px 30px;
+        line-height: 1.4;
+        font-size: 14px;
+        font-weight: 500;
+        border-radius: 30px;     
+        font-family: 'Workbench', sans-serif;  
+        animation:vibrate 10s linear both 
+    }
+    .boton-container {
+        display: flex; 
+        justify-content: center;
+        margin-top: 50px;
+    }
+
+    .botonentrarmenu {
+        text-align: center;
+        margin-top: 70px;
+        text-decoration: none;
+        margin: 0 60px; 
+    }
     
 </style>
 <body>
@@ -193,10 +220,16 @@
                 
             </div>
         </div>
-        <div class="entrarmenu">
-            <a href="#" class="entrarsolicitar">Elegir</a>
-            <a href="#" class="entrarsolicitar">Elegir</a>
-            <a href="#" class="entrarsolicitar">Elegir</a>
+        <div class="boton-container">
+            <div class="botonentrarmenu">
+                <a href="#" class="entrarsolicitar">Elegir</a>
+            </div>
+            <div class="botonentrarmenu">
+                <a href="#" class="entrarsolicitar">Elegir</a>
+            </div>
+            <div class="botonentrarmenu">
+                <a href="#" class="entrarsolicitar">Elegir</a>
+            </div>
         </div>
     </section>
 
