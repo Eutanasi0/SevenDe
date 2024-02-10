@@ -7,6 +7,8 @@ const app = express();
 
 app.use(express.static('front'));
 
+
+
 app.listen(3000, () => {
     console.log('hi, im wasa and im innn http://localhost:3000');
 });
