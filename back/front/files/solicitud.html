@@ -133,6 +133,8 @@
     .menus-container {
         display: flex; 
         justify-content: center;
+
+        margin-top: 20px;
     }
 
     .menus {
@@ -145,6 +147,29 @@
         border-radius: 10px; 
         overflow: hidden;
         margin-top: 40px;
+        .menus {
+        flex: 1;
+        padding: 10px;
+        border: 1px solid #ccc;
+        margin: 0 10px;
+    }
+    }
+
+    h3 {
+        text-align: center;
+        margin-left: 5px;
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    li {
+        text-align: justify;
+        padding: 5px 0;
     }
 
     .entrarsolicitar{
@@ -185,7 +210,7 @@
             <header>
                 <nav>
                     <ul>
-                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="/index.html">Inicio</a></li>
                         <li><a href="#">Sobre Nosotros</a></li>
                         <li><a href="#">Contacto</a></li>
     
@@ -197,44 +222,36 @@
         <div class="cuadrados-container">
 
             <div class="cuadrado">
-                <img src="OIG1.jpeg" alt="Imagen 1">
+                <img src="/img/OIG1.jpeg" alt="Imagen 1">
             </div>
 
             <div class="cuadrado">
-                <img src="OIG1.jpeg" alt="Imagen 2">
+                <img src="/img/OIG1.jpeg" alt="Imagen 2">
             </div>
 
             <div class="cuadrado">
-                <img src="OIG1.jpeg" alt="Imagen 3">
+                <img src="/img/OIG1.jpeg" alt="Imagen 3">
             </div>
         </div>
 
         <div class="menus-container">
-            <div class="menus">
-                
-            </div>
-            <div class="menus">
-                
-            </div>
-            <div class="menus">
-                
-            </div>
+
         </div>
         <div class="boton-container">
-            <div class="botonentrarmenu">
-                <a href="#" class="entrarsolicitar">Elegir</a>
+            <div class="botonentrarmenu" >
+                <a href="/files/form.html" id="menu1" class="entrarsolicitar">Elegir</a>
             </div>
             <div class="botonentrarmenu">
-                <a href="#" class="entrarsolicitar">Elegir</a>
+                <a href="/files/form.html" id="menu2" class="entrarsolicitar">Elegir</a>
             </div>
             <div class="botonentrarmenu">
-                <a href="#" class="entrarsolicitar">Elegir</a>
+                <a href="/files/form.html" id="menu3" class="entrarsolicitar">Elegir</a>
             </div>
         </div>
     </section>
 
 </body>
-    <script src="../back/front/scrollreveal.js"></script>
+    <script src="/scripts/menus.js"></script>
     <script src="https://unpkg.com/scrollreveal@4.0.5/dist/scrollreveal.min.js"></script>
 
 </html>

@@ -25,6 +25,7 @@
 
     body{
         overflow-x: hidden;
+        
     }
 
     .main{
@@ -134,7 +135,41 @@
     .opciones-segundo-plato input {
         margin-right: 5px;
     }    
+    
+    #box-com{
+        width: 100%;
+        max-width: 600px;
+        background-color: transparent;
+        padding: 20px;
+        border-radius: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border: 2px solid white;
+        margin-left: 30%;
+        margin-right: 30%;
+        
+    }
 
+    .registrarboton{
+        text-align: center;
+        margin-top: 90px;
+        text-decoration: none;
+    }
+
+    .registrar{
+        text-decoration: none;
+        display: inline-block;
+        text-align: center;
+        color: white;
+        background: #000000;
+        border: 1px solid transparent;
+        padding: 12px 30px;
+        line-height: 1.4;
+        font-size: 14px;
+        font-weight: 500;
+        border-radius: 30px;     
+        font-family: 'Workbench', sans-serif;  
+        animation:vibrate 10s linear both 
+    }
 
 </style>
 <body>
@@ -143,7 +178,7 @@
             <header>
                 <nav>
                     <ul>
-                        <li><a href="#">Inicio</a></li>
+                        <li><a href="/index.html">Inicio</a></li>
                         <li><a href="#">Sobre Nosotros</a></li>
                         <li><a href="#">Contacto</a></li>
     
@@ -153,25 +188,33 @@
 
             </header>
         </div>
+        <div>
 
-        <div class="opciones-entradas">
+
+        </div>
+        <div class="opciones-entradas" id="box-com" style="margin-bottom: 30px;">
             <label for="entradas">¿Qué elegirá de entradas?</label>
             <label for="opcion1">Comida 1<input type="radio" id="opcion1" name="entradas" value="opcion1"></label>
             <label for="opcion2">Comida 2<input type="radio" id="opcion2" name="entradas" value="opcion2"></label>
         </div>
-        <div class="opciones-segundo-plato">
+        <div class="opciones-segundo-plato" id="box-com" style="margin-bottom: 30px;">
             <label for="segundoPlato">¿Qué elegirá de segundo?</label>
             <label for="opcion3">Comida 3<input type="radio" id="opcion3" name="segundoPlato" value="opcion3"></label>
             <label for="opcion4">Comida 4<input type="radio" id="opcion4" name="segundoPlato" value="opcion4"></label>
             <label for="opcion5">Comida 5<input type="radio" id="opcion5" name="segundoPlato" value="opcion5"></label>
             <label for="opcion6">Comida 6<input type="radio" id="opcion6" name="segundoPlato" value="opcion6"></label>
         </div>
+
+        <div class="registrarboton">
+            |<a href="#" class="registrar">registrar</a>
+         </div>
       
         
 
     </section>
 
 </body>
+    <script src="/scripts/menus.js"></script>
     <script type="application/javascript" src="../back/front/scrollreveal.js"></script>
     <script type="application/javascript" src="https://unpkg.com/scrollreveal@4.0.5/dist/scrollreveal.min.js"></script>
 
