@@ -47,3 +47,16 @@ const jsonComidas = {
       menusContainer.appendChild(menuDiv);
   });
 
+  let menuSeleccionado = null;
+  
+  document.getElementById('menu1').addEventListener('click', function() {
+    menuSeleccionado = jsonComidas.listasComidas[0];
+  });
+  
+  document.getElementById('menu2').addEventListener('click', function() {
+    menuSeleccionado = jsonComidas.listasComidas[1];
+  });
+  
+  document.getElementById('menu3').addEventListener('click', function() {
+    menuSeleccionado = jsonComidas.listasComidas[2];
+  });

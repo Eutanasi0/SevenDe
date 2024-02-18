@@ -106,44 +106,82 @@
         font-weight: bold;
     }
 
-    .logoimg{
-        text-align: center
-    }
+    .logo {
+    display: block;
+    margin-right: auto;
+    margin-left: auto; 
+    margin-top: 4px;
+}
+.inici { 
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2. 1fr);
+    grid-template-areas: "txt imagen ";
+    align-items: center;
+    gap: 2rem;
+    margin-top: 140px;
+}
+.txt {
+    grid-area: txt;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-left: 300px;
+    color: white;
+}
+.img img {
+    grid-area: imagen;
+    width: 400px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 270px;
+}
+.txt p {
+    margin-top: 20px;
+}
+.txt h2 {
+    margin-top: 20px;
+}
+body{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+h2{
+    margin-top: 30px;
+    align-items: center;
+    justify-self: center;
+    color: white;
+}
+.gif {
+    width: 100px;
+    height: 100px;
+    margin: 40px;
+}
+.team-members {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 40vh;
+}
+.team-member{
+    text-align: center;
+    margin: 30px;
+    color: white;
+}
+.team-member img {
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 10%;
+}
+.team-member p {
+    margin-top: 20px;
+}
 
-    .logoimg img {
-        width: 500px; 
-    }
-    .entrarmenu{
-        text-align: center;
-        margin-top: 150px;
-        text-decoration: none;
-    }
-    .entrarsolicitar{
-        text-decoration: none;
-        display: inline-block;
-        text-align: center;
-        color: white;
-        background: #000000;
-        border: 1px solid transparent;
-        padding: 12px 30px;
-        line-height: 1.4;
-        font-size: 14px;
-        font-weight: 500;
-        border-radius: 30px;     
-        font-family: 'Workbench', sans-serif;  
-        animation:vibrate 10s linear both 
-    }
-    @keyframes vibrate{0%{transform:translate(0)}20%{transform:translate(-2px,2px)}40%{transform:translate(-2px,-2px)}60%{transform:translate(2px,2px)}80%{transform:translate(2px,-2px)}100%{transform:translate(0)}}
-
-
-    .tracking-in-expand {
-        animation:tracking-in-expand 1s linear both
-    } 
-    @keyframes tracking-in-expand {
-        0%{letter-spacing:-.2em;opacity:0}40%{opacity:.6}100%{opacity:1}
-    }
-    
-    
 </style>
 <body>
     <section class="inicio">
@@ -157,18 +195,51 @@
     
                     </ul>
                 </nav>
-                <div class="logo">
-                    <h2 class="tracking-in-expand"><a href="hola">SevenDe</a></h2>
-                    <h1>A web app that makes easier to buy food at UNMSM</h1>
-                </div>
-                
             </header>
         </div>
-        
-        <div class="entrarmenu">
-           |<a href="/files/solicitud.html" class="entrarsolicitar">Entrar a solicitar menu</a>
+        <section class="inici">
+            <div class="txt">
+                <h2> ¿Cómo nació SevenDe? </h2>
+                <p> SevenDe es una app web que nació a partir de una problematica identificada de la aglomeración de vendedores de comida en la puerta 7, lo cual genera un desorden y peligro hacia los estudiantes.  Este proyecto esta hecho por estudiantes de la escuela de Ingeniería de Software B22 que ayudará a la venta y reserva de menú. </p>
+            </div>
+            <div class = "img">
+                <img src="/img/Logo_SevenDe.svg" class="logo">  
+            </div>
+        </section>
+    
+            <img src="/img/fresa.gif" class="gif" alt="gif1"> 
+    
+            <h2> Equipo </h2> 
+    
+        <div class="team-members">
+            
+            <div class="team-member">
+                <img src = "/img/sebas.png">
+                <p> Sebastián Santiago Ayala Alberca </p>
+            </div>
+    
+            <div class="team-member"> 
+                <img src="/img/haru.jpg">
+                <p> Harumi Nayeli Contreras Quispe </p>
+            </div>
+    
+            <div class="team-member"> 
+                <img src="/img/benja.jpg">
+                <p> José Benjamín Flores Gómez </p>
+            </div>
+    
+            <div class="team-member"> 
+                <img src="/img/abi.png">
+                <p> Abigail Yomela Llana Osorio </p>
+            </div>
+    
         </div>
+    
+    
+        
     </section>
+
+
 
 </body>
 
