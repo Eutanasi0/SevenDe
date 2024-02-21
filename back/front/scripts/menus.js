@@ -47,17 +47,11 @@ const jsonComidas = {
       menusContainer.appendChild(menuDiv);
   });
 
-  let menuSeleccionado = null;
-  
-  document.getElementById('menu1').addEventListener('click', function() {
-    menuSeleccionado = jsonComidas.listasComidas[0];
-  });
-  
-  document.getElementById('menu2').addEventListener('click', function() {
-    menuSeleccionado = jsonComidas.listasComidas[1];
-  });
-  
-  document.getElementById('menu3').addEventListener('click', function() {
-    menuSeleccionado = jsonComidas.listasComidas[2];
-  });
+  const registrar = document.querySelector('.registrar');
+  const entrada1 = document.querySelector('#entrada1');
+  const segundoPlato = document.querySelector('#segundoPlato');
+  const resultado = document.querySelector('#resultado');
 
+  registrar.addEventListener('click', () => {
+      resultado.innerHTML = `Usted eligió ${entrada1.value} de entradas y ${segundoPlato.value} de segundo plato`;
+  });
