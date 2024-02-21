@@ -111,11 +111,13 @@
         font-family: 'Workbench', sans-serif;
         text-align: center;
         margin-top: 80px;
+        color: white;
     }
     .opciones-segundo-plato {
         font-family: 'Workbench', sans-serif;
         text-align: center;
         margin-top: 60px;
+        color: white;
     }
 
     .opciones-entradas label{
@@ -171,6 +173,13 @@
         animation:vibrate 10s linear both 
     }
 
+    #entrada1 {
+        color: white;
+    }
+
+    #segundoPlato {
+        color: white;
+    }
 </style>
 <body>
     <section class="inicio">
@@ -193,16 +202,16 @@
 
         </div>
         <div class="opciones-entradas" id="box-com" style="margin-bottom: 30px;">
-            <label for="entradas">¿Qué elegirá de entradas?</label>
-            <label for="opcion1">Comida 1<input type="radio" id="opcion1" name="entradas" value="opcion1"></label>
-            <label for="opcion2">Comida 2<input type="radio" id="opcion2" name="entradas" value="opcion2"></label>
+            <label for="entrada1">¿Qué elegirá de entradas?</label>
+            <input type="text" id="entrada1" name="entradas">
         </div>
         <div class="opciones-segundo-plato" id="box-com" style="margin-bottom: 30px;">
             <label for="segundoPlato">¿Qué elegirá de segundo?</label>
-            <label for="opcion3">Comida 3<input type="radio" id="opcion3" name="segundoPlato" value="opcion3"></label>
-            <label for="opcion4">Comida 4<input type="radio" id="opcion4" name="segundoPlato" value="opcion4"></label>
-            <label for="opcion5">Comida 5<input type="radio" id="opcion5" name="segundoPlato" value="opcion5"></label>
-            <label for="opcion6">Comida 6<input type="radio" id="opcion6" name="segundoPlato" value="opcion6"></label>
+            <input type="text" id="segundoPlato" name="segundoPlato">
+        </div>
+        <div class="opciones-segundo-plato" id="box-com" style="margin-bottom: 30px;">
+            <label for="segundoPlato">¿Qué elegirá de segundo?</label>
+            <input type="text" id="segundoPlato" name="segundoPlato">
         </div>
 
         <div class="registrarboton">
@@ -214,7 +223,7 @@
     </section>
 
 </body>
-    <script src="/scripts/menus.js"></script>
+    <script src="/scripts/menulabels.js"></script>
 
     <script type="application/javascript" src="https://unpkg.com/scrollreveal@4.0.5/dist/scrollreveal.min.js"></script>
 

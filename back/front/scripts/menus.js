@@ -60,3 +60,4 @@ const jsonComidas = {
   document.getElementById('menu3').addEventListener('click', function() {
     menuSeleccionado = jsonComidas.listasComidas[2];
   });
+
