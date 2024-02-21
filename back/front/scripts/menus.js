@@ -1,3 +1,4 @@
+
 const jsonComidas = {
     "listasComidas": [
       {
@@ -46,6 +47,7 @@ const jsonComidas = {
       menuDiv.appendChild(platoFondoUl);
       menusContainer.appendChild(menuDiv);
   });
+
 
   const registrar = document.querySelector('.registrar');
   const entrada1 = document.querySelector('#entrada1');
