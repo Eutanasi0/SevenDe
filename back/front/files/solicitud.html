@@ -148,7 +148,7 @@
         text-align: center;
         width: auto; 
         height: 300px; 
-        margin: 0 10px; 
+        margin: 0 20px; 
         background-color: transparent; 
     
         border-radius: 10px; 
@@ -157,9 +157,9 @@
 
 
 
-        margin: 0 65px;
+        margin: 0 70px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-
+        
 
         padding: 20px;
         border-radius: 20px;
@@ -310,16 +310,29 @@
     }
 
     .opciones-entradas{
-        font-family: 'Workbench', sans-serif;
+        font-family: 'workbench', sans-serif;
         text-align: center;
         margin-top: 80px;
         color: black ;
+    }
+    .opciones-menu{
+        font-family: 'Workbench', sans-serif;
+        text-align: center;
+        margin-top: 80px;
+        color: black;
     }
     .opciones-segundo-plato {
         font-family: 'Workbench', sans-serif;
         text-align: center;
         margin-top: 60px;
         color: black;
+    }
+
+    .opciones-menu label{
+        font-family: "poppins", sans-serif;
+        font-size: 18px;
+        margin-bottom: 10px;
+        display: block;
     }
 
     .opciones-entradas label{
@@ -336,7 +349,8 @@
     }
 
     .opciones-entradas input,
-    .opciones-segundo-plato input {
+    .opciones-segundo-plato input,
+    .opciones-menu input {
         margin-right: 5px;
     }    
     
@@ -417,6 +431,10 @@
 
         </div>
 
+        <div class="opciones-menu" id="box-com" style="margin-bottom: 30px;">
+            <label for="entrada1">¿Qué elegirá de entradas?</label>
+            <input type="text" id="entrada1" name="entradas">
+        </div>
 
         <div class="opciones-entradas" id="box-com" style="margin-bottom: 30px;">
             <label for="entrada1">¿Qué elegirá de entradas?</label>
