@@ -168,31 +168,34 @@ h2{
     margin: 40px;
 }
 .team-members {
+    margin-top: 210px;
     display: flex;
+    flex-direction: column; /* Cambiar de fila a columna */
     justify-content: center;
     align-items: center;
     text-align: center;
     height: 40vh;
     font-family: "poppins", sans-serif;
-    margin-top: 100px;
 }
 .team-member{
-
     text-align: center;
-    margin: 30px;
+            margin: 30px;
     color: black;
-    font-family: "poppins", sans-serif;
-    flex-direction: column;
+            font-family: "poppins", sans-serif;
+            display: flex;
+    margin-top: 5px;
+            
 }
 .team-member img {
-    margin-top: 30px;
     width: 130px;
     height: 130px;
     object-fit: cover;
-    border-radius: 10%;
+    border-radius: 50%;
+    margin-bottom: 10px;
 }
 .team-member p {
-    margin-top: 30px;
+    margin-top: 40px;
+    margin-left: 15px;
     font-family: "poppins", sans-serif;
 }
 
@@ -211,19 +214,46 @@ h2{
                 </nav>
             </header>
         </div>
-        <section class="inici">
-            <div class="txt">
-                <h2> ¿Cómo nació SevenDe? </h2>
-                <p> SevenDe es una app web que nació a partir de una problematica identificada de la aglomeración de vendedores de comida en la puerta 7, lo cual genera un desorden y peligro hacia los estudiantes.  Este proyecto esta hecho por estudiantes de la escuela de Ingeniería de Software B22 que ayudará a la venta y reserva de menú. </p>
-            </div>
-            <div class = "img">
-                <img src="/img/Logo_SevenDe.svg" class="logo">  
-            </div>
-        </section>
-    
-            <img src="/img/fresa.gif" class="gif" alt="gif1"> 
-    
 
+        <div class="team-members">
+            
+            <div class="team-member">
+                <img src = "/img/sebas.png">
+                <div class="nomas">
+                    <p> Sebastián Santiago Ayala Alberca </p>
+                    <h23> CEO</h23>
+                </div>
+              
+            </div>
+    
+            <div class="team-member"> 
+                <img src="/img/haru.jpg">
+                <div class="nomas">
+                    <p> Harumi Nayeli Contreras Quispe </p>
+                    <h23> Ventas y marketing</h23>
+                </div>
+                
+            </div>
+    
+            <div class="team-member"> 
+                <img src="/img/benja.jpg">
+                <div>
+                    <p> José Benjamín Flores Gómez </p>
+                    <h23> Desarrollador de software</h23>
+                </div>
+                
+            </div>
+    
+            <div class="team-member"> 
+                <img src="/img/abi.png">
+                <div>   
+                    <p> Abigail Yomela Llana Osorio </p>
+                    <h23> Finanzas</h23>
+                </div>
+ 
+            </div>
+    
+        </div>
     
     
         
