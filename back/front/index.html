@@ -20,7 +20,7 @@
         margin: 0;
         box-sizing: border-box;
         
-        background-color: #e0a85d;
+        
     }
 
     body{
@@ -32,6 +32,10 @@
         height: 100%;
         max-width: 100%;
         margin: 0 auto;
+        position: relative;
+            z-index: 1;
+            padding: 20px;
+            color: white;
     }
     
     .inicio{
@@ -117,12 +121,15 @@
         text-align: center;
         margin-top: 8%;
         text-decoration: none;
+        
+        position: relative;
+        z-index: 2; /* Aumentar el z-index */
     }
     .entrarsolicitar{
         text-decoration: none;
         display: inline-block;
         text-align: center;
-        color: #e0a85d;
+        color: black;
         background: rgb(123, 64, 64);
         border: 1px solid transparent;
         padding: 12px 30px;
@@ -143,11 +150,31 @@
         0%{letter-spacing:-.2em;opacity:0}40%{opacity:.6}100%{opacity:1}
     }
     
-    
+    #video-background {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -1000;
+            background-size: cover;
+            transition: 1s opacity;
+            opacity: 0.7;
+    }
+
+
 </style>
 <body>
     <section class="inicio">
         <div class="main">
+            
+            <video id="video-background" autoplay muted loop>
+                <source src="/img/Video_Abrir_Pedido.mp4" type="video/mp4">
+                
+            </video>
+
             <header>
                 <nav>
                     <ul>
@@ -168,6 +195,7 @@
         <div class="entrarmenu">
            |<a href="/files/solicitud.html" class="entrarsolicitar">Entrar a solicitar menu</a>
         </div>
+>
     </section>
 
     <script src="https://unpkg.com/scrollreveal"></script>
