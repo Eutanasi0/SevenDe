@@ -245,6 +245,14 @@
         position: relative;
     }
 
+    .inicio2{
+        height: 100%;
+        width: 100%;
+        min-height: 100vh;
+        position: relative;
+        margin-top: 100px;
+    }
+
     .inicio header .logo h2 a{
         display: block;
         font-size: 200px;
@@ -313,13 +321,13 @@
     .opciones-entradas{
         font-family: 'workbench', sans-serif;
         text-align: center;
-        margin-top: 80px;
+        margin-top: 60px;
         color: black ;
     }
     .opciones-menu{
         font-family: 'Workbench', sans-serif;
         text-align: center;
-        margin-top: 80px;
+        margin-top: 60px;
         color: black;
     }
     .opciones-segundo-plato {
@@ -365,6 +373,7 @@
         border: 2px solid black;
         margin-left: 30%;
         margin-right: 30%;
+        margin-top: 100px;
         
     }
 
@@ -444,20 +453,23 @@
 
         </div>
     </section>
-    <section class="inicio">
-        <div class="opciones-menu" id="box-com" style="margin-bottom: 30px;">
-            <label for="menutipo">¿Qué menu elegira?</label>
-            <input type="text" id="menutipo" name="menustipo">
+    <section class="inicio2">
+        <div id="box-com">
+            <div class="opciones-menu"  style="margin-bottom: 30px;">
+                <label for="menutipo">¿Qué menu elegira?</label>
+                <input type="text" id="menutipo" name="menustipo">
+            </div>
+    
+            <div class="opciones-entradas"  style="margin-bottom: 30px;">
+                <label for="entrada1">¿Qué elegirá de entradas?</label>
+                <input type="text" id="entrada1" name="entradas">
+            </div>
+            <div class="opciones-segundo-plato"  style="margin-bottom: 30px;">
+                <label for="segundoPlato">¿Qué elegirá de segundo?</label>
+                <input type="text" id="segundoPlato" name="segundoPlato">
+            </div>
         </div>
-
-        <div class="opciones-entradas" id="box-com" style="margin-bottom: 30px;">
-            <label for="entrada1">¿Qué elegirá de entradas?</label>
-            <input type="text" id="entrada1" name="entradas">
-        </div>
-        <div class="opciones-segundo-plato" id="box-com" style="margin-bottom: 30px;">
-            <label for="segundoPlato">¿Qué elegirá de segundo?</label>
-            <input type="text" id="segundoPlato" name="segundoPlato">
-        </div>
+        
 
         <div class="registrarboton">
             |<button onclick="" class="registrar">registrar</button>
