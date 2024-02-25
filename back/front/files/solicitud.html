@@ -110,6 +110,7 @@
     .cuadrados-container {
         display: flex; 
         justify-content: center;
+        margin-top: 5%;
     }
 
     .cuadrado {
@@ -140,7 +141,7 @@
         display: flex; 
         justify-content: center;
         color: black;
-        margin-top: 20px;
+        margin-top: 50px;
         
     }
 
@@ -148,7 +149,7 @@
         text-align: center;
         width: auto; 
         height: 300px; 
-        margin: 0 10px; 
+        margin: 0 20px; 
         background-color: transparent; 
     
         border-radius: 10px; 
@@ -157,9 +158,9 @@
 
 
 
-        margin: 0 65px;
+        margin: 0 70px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-
+        
 
         padding: 20px;
         border-radius: 20px;
@@ -310,16 +311,29 @@
     }
 
     .opciones-entradas{
-        font-family: 'Workbench', sans-serif;
+        font-family: 'workbench', sans-serif;
         text-align: center;
         margin-top: 80px;
         color: black ;
+    }
+    .opciones-menu{
+        font-family: 'Workbench', sans-serif;
+        text-align: center;
+        margin-top: 80px;
+        color: black;
     }
     .opciones-segundo-plato {
         font-family: 'Workbench', sans-serif;
         text-align: center;
         margin-top: 60px;
         color: black;
+    }
+
+    .opciones-menu label{
+        font-family: "poppins", sans-serif;
+        font-size: 18px;
+        margin-bottom: 10px;
+        display: block;
     }
 
     .opciones-entradas label{
@@ -336,7 +350,8 @@
     }
 
     .opciones-entradas input,
-    .opciones-segundo-plato input {
+    .opciones-segundo-plato input,
+    .opciones-menu input {
         margin-right: 5px;
     }    
     
@@ -382,6 +397,18 @@
     #segundoPlato {
         color: black;
     }
+
+    .resultado {
+        width: 100%;
+        max-width: 600px;
+        background-color: transparent;
+        padding: 20px;
+        border-radius: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border: 2px solid black;
+        margin-left: 30%;
+        margin-right: 30%;
+    }
 </style>
 <body>
     <section class="inicio">
@@ -416,7 +443,12 @@
         <div class="menus-container">
 
         </div>
-
+    </section>
+    <section class="inicio">
+        <div class="opciones-menu" id="box-com" style="margin-bottom: 30px;">
+            <label for="menutipo">¿Qué menu elegira?</label>
+            <input type="text" id="menutipo" name="menustipo">
+        </div>
 
         <div class="opciones-entradas" id="box-com" style="margin-bottom: 30px;">
             <label for="entrada1">¿Qué elegirá de entradas?</label>
