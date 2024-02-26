@@ -1,4 +1,3 @@
-
 const jsonComidas = {
     "listasComidas": [
       {
@@ -57,9 +56,11 @@ const jsonComidas = {
  
   registrar.addEventListener('click', () => {
     resultado.innerHTML = `
-        <div style="text-align: center;">
+        <div id="box-com" style="text-align: center;">
             <h2>Boleta de Pedido</h2>
             <p><strong>Entrada:</strong> ${entrada1.value}</p>
             <p><strong>Segundo Plato:</strong> ${segundoPlato.value}</p>
         </div>`;
-});
+
+    
+  });
