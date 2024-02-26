@@ -24,3 +24,5 @@ sr.reveal('.nomas3',{delay: 1100, origin:'right'});
 sr.reveal('.opciones-entradas',{delay: 200, origin:'bottom'});
 sr.reveal('.opciones-segundo-plato',{delay: 200, origin:'bottom'});
 sr.reveal('.opciones-menu',{delay: 200, origin:'bottom'});
+
+sr.reveal('#box-com',{delay: 200, origin:'bottom'});

@@ -39,5 +39,10 @@ client.on('message', async (msg) => {
     }
 });
  
+function enviarMensaje() {
+    let number = "51917813401@c.us";
+    let msg = "wasaaaaa";
+    client.sendMessage(number, msg);
+}
 
 client.initialize();
