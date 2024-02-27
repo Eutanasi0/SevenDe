@@ -2,19 +2,19 @@ const jsonComidas = {
     "listasComidas": [
       {
         "tipo": "Doña Marta",
-        "platos": ["sopa ", "ensalada de fruta"],
-        "platodefondo": ["arroz chaufa", "arroz con pollo", "lomo saltado"]
+        "platos": ["Sopa ", "Ensalada de fruta"],
+        "platodefondo": ["Arroz chaufa", "Arroz con pollo", "Lomo saltado"]
       },
       {
         "tipo": "SM Criollo",
-        "platos": ["ensalada", "causa"],
-        "platodefondo": ["Tallarin verde", "seco de res", "pescado frito"]
+        "platos": ["Ensalada", "Causa"],
+        "platodefondo": ["Tallarin verde", "Seco de res", "Pescado frito"]
 
       },
       {
         "tipo": "La sazon de la colonial",
-        "platos": ["tequeños", "papa a la huancaína"],
-        "platodefondo": ["pure con pollo al horno", "Tallarin saltado", "macarrones"]
+        "platos": ["Tequeños", "Papa a la huancaína"],
+        "platodefondo": ["Pure con pollo al horno", "Tallarin saltado", "Macarrones"]
       }
     ]
   };
