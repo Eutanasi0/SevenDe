@@ -336,6 +336,13 @@
         margin-top: 60px;
         color: black;
     }
+    .nombres{
+        font-family: 'Workbench', sans-serif;
+        text-align: center;
+        margin-top: 60px;
+        color: black;
+    }
+    
 
     .opciones-menu label{
         font-family: "poppins", sans-serif;
@@ -357,9 +364,17 @@
         display: block;
     }
 
+    .nombre label {
+        font-family: "poppins", sans-serif;
+        font-size: 18px;
+        margin-bottom: 10px;
+        display: block;
+    }
+
     .opciones-entradas input,
     .opciones-segundo-plato input,
-    .opciones-menu input {
+    .opciones-menu input,
+    .nombres input{
         margin-right: 5px;
     }    
     
@@ -374,7 +389,7 @@
         margin-left: 30%;
         margin-right: 30%;
         margin-top: 100px;
-        
+        font-family: "poppins", sans-serif;
     }
 
     .registrarboton{
@@ -437,7 +452,7 @@
         <div class="cuadrados-container" >
 
             <div class="cuadrado" id="c1">
-                <img src="/img/3.png" alt="Imagen 1">
+                <img src="/img/3 (2).png" alt="Imagen 1">
             </div>
 
             <div class="cuadrado" id="c2">
@@ -450,11 +465,17 @@
         </div>
 
         <div class="menus-container">
-
+            
         </div>
     </section>
     <section class="inicio2">
         <div id="box-com">
+
+            <div class="nombres"  style="margin-bottom: 30px;">
+                <label for="nombre">Coloque su nombre:</label>
+                <input type="text" id="nombrestipo" name="namesitos">
+            </div>
+
             <div class="opciones-menu"  style="margin-bottom: 30px;">
                 <label for="menutipo">¿Qué menu elegira?</label>
                 <input type="text" id="menutipo" name="menustipo">
@@ -464,16 +485,21 @@
                 <label for="entrada1">¿Qué elegirá de entradas?</label>
                 <input type="text" id="entrada1" name="entradas">
             </div>
+
             <div class="opciones-segundo-plato"  style="margin-bottom: 30px;">
                 <label for="segundoPlato">¿Qué elegirá de segundo?</label>
                 <input type="text" id="segundoPlato" name="segundoPlato">
             </div>
+
         </div>
         
 
         <div class="registrarboton">
-            |<button onclick="enviarMensaje()" class="registrar">registrar</button>
+            <button onclick="" class="registrar">registrar</button>
+            <button onclick="" class="registrar">comprar</button>
         </div>
+
+        
       
          <div id="resultado"></div>
 
@@ -481,48 +507,7 @@
 
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="/scripts/sc.js"></script>
-    <script>
-                const qrcode = require('qrcode-terminal');
-        const { Client } = require('whatsapp-web.js');
-        const client = new Client();
-
-        client.on('qr', qr => {
-            qrcode.generate(qr, { small: true });
-        });
-
-        client.on('ready', () => {
-            console.log('Client is ready!');
-        });
-
-        client.on('message', async (msg) => {
-            console.log(`${msg.author}: ${msg.body}`);
-
-            if (msg.body === "!todos") {
-                const chat = await msg.getChat();
-
-                let text = "";
-                let mentions = [];
-
-                for (let participant of chat.participants) {
-                    mentions.push(`${participant.id.user}@c.us`);
-                    text += `@${participant.id.user} `;
-                }
-
-                await chat.sendMessage(text, { mentions });
-            } else if (msg.body === "!menu") {
-                let number = "51917813401@c.us";
-                client.sendMessage(number, "wasaaaaa");
-            }
-        });
-
-        client.initialize();
-
-        function enviarMensaje() {
-            let number = "51917813401@c.us";
-            let msg = "wasaaaaa";
-            client.sendMessage(number, msg);
-        }
-    </script>
+    <script src="/scripts/benja.js"></script>
     <script src="/scripts/menus.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/whatsapp-web.js"></script>
 

@@ -26,3 +26,6 @@ sr.reveal('.opciones-segundo-plato',{delay: 200, origin:'bottom'});
 sr.reveal('.opciones-menu',{delay: 200, origin:'bottom'});
 
 sr.reveal('#box-com',{delay: 200, origin:'bottom'});
+sr.reveal('#i1',{delay: 250, origin:'right'});
+sr.reveal('#i2',{delay: 350, origin:'right'});
+sr.reveal('#i3',{delay: 450, origin:'right'});

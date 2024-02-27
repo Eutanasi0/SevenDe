@@ -41,6 +41,8 @@
             z-index: 1;
             padding: 20px;
             color: white;
+            position: relative;
+
     }
     
     .inicio{
@@ -50,6 +52,8 @@
         position: relative;
     }
 
+
+  
     .inicio header .logo h2 a{
         display: block;
         font-size: 200px;
@@ -71,6 +75,8 @@
         color: black;
         text-align: center;
         padding: 1em 0;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
     }
 
     nav a{
@@ -124,12 +130,14 @@
     }
     .entrarmenu{
         text-align: center;
-        margin-top: 8%;
+        margin-top: 0.5%;
         text-decoration: none;
         
         position: relative;
         z-index: 2; /* Aumentar el z-index */
     }
+
+    
     .entrarsolicitar{
         text-decoration: none;
         display: inline-block;
@@ -149,7 +157,8 @@
 
 
     .tracking-in-expand {
-        animation:tracking-in-expand 1s linear both
+        animation:tracking-in-expand 1s linear both;
+        
     } 
     @keyframes tracking-in-expand {
         0%{letter-spacing:-.2em;opacity:0}40%{opacity:.6}100%{opacity:1}
@@ -167,7 +176,13 @@
         z-index: -1000;
     }
 
-
+    .icono {
+        width: 30px; /* Ajusta el tamaño según lo necesites */
+        height: 30px; /* Ajusta el tamaño según lo necesites */
+        display: block;
+        margin: 0 auto; /* Centra horizontalmente */
+        margin-top: 20px; /* Ajusta la separación del h1 */
+    }
 </style>
 <body>
     <section class="inicio">
@@ -190,6 +205,10 @@
                 <div class="logo">
                     <h2 class="tracking-in-expand"><a href="hola">SevenDe</a></h2>
                     <h1 class="slogan">Explora, reserva y disfruta: SevenDe hacen tu almuerzo más sencillo</h1>
+                    <a href="https://www.instagram.com/sevende_pe?igsh=MTJpZ3Bidmk3bzU4ag%3D%3D&utm_source=qr" class="i1"><img src="/img/instagram.png" alt="Icono" class="icono" id="i1"></a>
+                    
+                    <a href="https://www.facebook.com/profile.php?id=61556702914212&mibextid=LQQJ4d" class=""><img src="/img/facebook.png" alt="icono" class="icono" id="i2"></a>
+                    <a href="https://github.com/Eutanasi0/SevenDe"><img src="/img/github.png" alt="icono" class="icono" id="i3"></a>
                 </div>
                 
             </header>
